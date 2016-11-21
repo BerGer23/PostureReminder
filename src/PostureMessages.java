@@ -2,6 +2,7 @@
 public class PostureMessages
 {
     private String _takeBreak;
+
     private String _takeBreakTitle;
 
     private String _sitUp;
@@ -11,6 +12,8 @@ public class PostureMessages
     private String _start;
 
     private String _stop;
+
+    private String _timeLeft;
 
     public String getTakeBreak()
     {
@@ -72,9 +75,18 @@ public class PostureMessages
         _takeBreakTitle = takeBreakTitle;
     }
 
+    public String getTimeLeft()
+    {
+        return _timeLeft;
+    }
+
+    public void setTimeLeft( final String timeLeft )
+    {
+        _timeLeft = timeLeft;
+    }
+
     public static PostureMessages populateMessages()
     {
-//        Locale.getDefault().getLanguage();
         final PostureMessages postureMessages = new PostureMessages();
         postureMessages.setTakeBreak( "Take a break!" );
         postureMessages.setTakeBreakTitle( "Please listen to this advice." );
@@ -82,6 +94,7 @@ public class PostureMessages
         postureMessages.setTitle( "Posture Helper" );
         postureMessages.setStart( "Start" );
         postureMessages.setStop( "Stop" );
+        postureMessages.setTimeLeft( "Time left: " );
         return postureMessages;
     }
 }
