@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/PostureReminder.iml" filepath="$PROJECT_DIR$/.idea/modules/PostureReminder.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/PostureReminder_test.iml" filepath="$PROJECT_DIR$/.idea/modules/PostureReminder_test.iml" group="PostureReminder" />
     </modules>
   </component>
 </project>
