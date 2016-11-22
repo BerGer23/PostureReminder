@@ -57,7 +57,7 @@ public class MainView
 
         _trafficLightPanel = new TrafficLightPanel();
 
-        _labelUpdateSwingTimer = new javax.swing.Timer( 1000, new ActionListener()
+        _labelUpdateSwingTimer = new javax.swing.Timer( 0, new ActionListener()
         {
             @Override
             public void actionPerformed( final ActionEvent e )
@@ -70,6 +70,10 @@ public class MainView
                                                                                            TimeUnit.MILLISECONDS.toSeconds( millis ) -
                                                                                                    TimeUnit.MINUTES.toSeconds( TimeUnit.MILLISECONDS.toMinutes( millis ) )
                     ) );
+                    if ( millis % 60000 == 0 )
+                    {
+                        new NotificationPopup( postureMessages.getSitUp(), "" );
+                    }
                 }
                 else
                 {
